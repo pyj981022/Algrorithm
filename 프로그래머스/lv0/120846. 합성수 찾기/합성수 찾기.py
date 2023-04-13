@@ -7,6 +7,7 @@ def solution(n):
             
             if i % j == 0:
                 result.append(i)
+        # result의 개수가 3이상이면 합성수이므로 +1
         if result.count(i) >= 3:
             answer += 1
     return answer
